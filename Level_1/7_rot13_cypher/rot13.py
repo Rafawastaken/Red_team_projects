@@ -1,11 +1,11 @@
 def rot13(target_text:str):
     message = ''
 
-    for letter in target_text.lower():
+    for letter in target_text:
 
-        if 'a' <= letter <= "m":
+        if 'a' <= letter.lower() <= "m":
             char_encoded = chr(ord(letter) + 13)
-        elif 'n' <= letter <= "z":
+        elif 'n' <= letter.lower() <= "z":
             char_encoded = chr(ord(letter) - 13)
 
         message = message + char_encoded
@@ -21,6 +21,6 @@ if __name__ == '__main__':
 
     except KeyboardInterrupt as kb:
         print("Quitting...")
-        
+
     except:
         print("Couldnt encrypt it... only letters pls")
