@@ -11,10 +11,10 @@ with app.app_context():
     db = SQLAlchemy(app)
 
     # Routes
-    from backend.routes import backend
-    from frontend.routes import frontend
+    from .backend.routes import backend
+    from .frontend.routes import frontend
 
     # Blueprints
-    app.register_blueprint(backend, '/secret-backend')
-    app.register_blueprint(frontend, '/')
+    app.register_blueprint(backend, url_prefix ='/secret-backend')
+    app.register_blueprint(frontend, url_prefix = '/')
     
