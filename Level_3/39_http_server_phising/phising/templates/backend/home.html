@@ -3,7 +3,16 @@
 {% block content %}
 <div class="container">
   <div class="row">
-    <div class="display-4">Welcome!</div>
+    <div class="display-5 mb-2">Welcome {{current_user.alias.title()}}!</div>
+    <hr />
+  </div>
+  <div class="row">
+    <div class="col mb-3">
+      <a href="#" class="btn btn-primary form-control">Manage Users</a>
+    </div>
+    <div class="col mb-3">
+      <a href="#" class="btn btn-secondary form-control">Check Results</a>
+    </div>
   </div>
 </div>
 {% endblock %}

@@ -18,7 +18,7 @@ with app.app_context():
     login_manager.login_view = 'backend.login'
     login_manager.login_message_category = 'danger'
     login_manager.needs_refresh_message_category ='danger'
-    login_manager.login_message = u'Necessário efetuar login para visualizar esta página'
+    login_manager.login_message = u'Please login to view required page'
 
 
 

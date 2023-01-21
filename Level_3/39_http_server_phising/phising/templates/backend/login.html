@@ -2,8 +2,11 @@
 <!-- content -->
 {% block content %}
 <div class="row mt-3 mb-3">
-  <div class="display-5 mb-2">+ New User</div>
-  <hr />
+  <div class="mb-2">
+    <span class="display-5 text-start">Login</span
+    ><span class="text-muted"> Please login to view page</span>
+  </div>
+  <hr class="" />
 </div>
 <div class="row">
   <div class="col border rounded">
@@ -20,13 +23,6 @@
       <div class="mb-3">
         <label for="alias" class="h6">Password</label>
         {{form.password(placeholder = 'Password', class='form-control')}}
-      </div>
-
-      <!-- repeat password -->
-      <div class="mb-3">
-        <label for="alias" class="h6">Repeat Password</label>
-        {{form.password_2(placeholder = 'Repeat Password',
-        class='form-control')}}
       </div>
 
       <hr class="mx-5" />
