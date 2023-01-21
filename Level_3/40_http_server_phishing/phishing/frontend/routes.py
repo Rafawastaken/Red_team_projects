@@ -1,6 +1,6 @@
 from flask import Blueprint, render_template, url_for, redirect
 
-from phising import app, db
+from phishing import app, db
 from .forms import FakeLoginForm
 from ..backend.models import Target
 

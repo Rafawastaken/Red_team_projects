@@ -2,7 +2,7 @@ from flask import Blueprint, render_template, flash, redirect, url_for
 from flask_login import login_required, current_user, logout_user, login_user
 
 
-from phising import app, db
+from phishing import app, db
 from .forms import AddUserForm, LoginUserForm
 from .models import User, Target
 

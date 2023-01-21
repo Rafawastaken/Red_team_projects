@@ -1,4 +1,4 @@
-from phising import app
+from phishing import app
 
 
 if __name__ == '__main__':
