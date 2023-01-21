@@ -1,0 +1,30 @@
+{% extends 'base_front.html' %} {% block content %}
+<div class="row mt-3">
+  <div class="col-6">
+    <div class="h3">
+      If you imagine real hard this is has the frontend of facebook or smth :)
+    </div>
+    <p class="text-muted">Trust...this is not a phising site</p>
+  </div>
+</div>
+<div class="row">
+  <div class="col border rounded">
+    <form method="POST" class="my-3">
+      {{form.csrf_token()}}
+
+      <div class="mb-3">
+        <label for="email">Email address</label>
+        {{form.email(placeholder="email address",class="form-control")}}
+      </div>
+
+      <div class="mb-3">
+        <label for="password">Your super secret password goes here :)</label>
+        {{form.password(placeholder='here...type your password',
+        class='form-control')}}
+      </div>
+
+      <input type="submit" value="Login" class="btn btn-success" />
+    </form>
+  </div>
+</div>
+{% endblock %}

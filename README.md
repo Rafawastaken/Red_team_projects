@@ -50,22 +50,22 @@ I'll use python mostly, but might try other languages.
 
 ---
 
-| Level 3 | Advanced Network Attacks                            | Exemple |
-| ------- | --------------------------------------------------- | ------- |
-| [31]    | Payload for reverse shell                           | :x:     |
-| [32]    | Payload to capture screenshots                      | :x:     |
-| [33]    | Implement a Botnet                                  | :x:     |
-| [34]    | Passive web scanner                                 | :x:     |
-| [35]    | ARP poisoning tool                                  | :x:     |
-| [36]    | Application that creates random shortcuts on screen | :x:     |
-| [37]    | Application to encrypt a file                       | :x:     |
-| [38]    | Develop a Ransomware application                    | :x:     |
-| [39]    | Spam Email sender                                   | :x:     |
-| [40]    | HTTP server for phishing                            | :x:     |
-| [41]    | Honeypot creator                                    | :x:     |
-| [42]    | Application that connects to the Tor Network        | :x:     |
-| [43]    | IRC Server                                          | :x:     |
-| [44]    | Packet Capture tool                                 | :x:     |
+| Level 3 | Advanced Network Attacks                            | Exemple            |
+| ------- | --------------------------------------------------- | ------------------ |
+| [31]    | Payload for reverse shell                           | :x:                |
+| [32]    | Payload to capture screenshots                      | :x:                |
+| [33]    | Implement a Botnet                                  | :x:                |
+| [34]    | Passive web scanner                                 | :x:                |
+| [35]    | ARP poisoning tool                                  | :x:                |
+| [36]    | Application that creates random shortcuts on screen | :x:                |
+| [37]    | Application to encrypt a file                       | :x:                |
+| [38]    | Develop a Ransomware application                    | :x:                |
+| [39]    | Spam Email sender                                   | :x:                |
+| [40]    | HTTP server for phishing                            | :heavy_check_mark: |
+| [41]    | Honeypot creator                                    | :x:                |
+| [42]    | Application that connects to the Tor Network        | :x:                |
+| [43]    | IRC Server                                          | :x:                |
+| [44]    | Packet Capture tool                                 | :x:                |
 
 ---
 

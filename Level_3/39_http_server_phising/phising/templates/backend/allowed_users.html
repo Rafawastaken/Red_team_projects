@@ -1,11 +1,13 @@
-{% extends 'base.html' %} {% block content %}
+{% extends 'base_back.html' %} {% block content %}
 <div class="row">
   <div class="col-4">
     <div class="display-5 mb-2">Allowed Users</div>
   </div>
   <div class="col-5"></div>
   <div class="col-3 mt-3 text-end">
-    <a href="{{url_for('backend.add_user')}}" class="btn btn-dark form-control"
+    <a
+      href="{{url_for('backend.add_user')}}"
+      class="btn btn-primary form-control"
       >Add User</a
     >
   </div>
@@ -13,7 +15,7 @@
 </div>
 <div class="row">
   <div class="col">
-    <table class="table table-hover table-striped table-dark text-center">
+    <table class="table table-hover table-striped table-secondary text-center">
       <thead>
         <tr>
           <th>#</th>

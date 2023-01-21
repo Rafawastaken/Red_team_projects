@@ -1,0 +1,30 @@
+{% extends 'base_back.html' %} {% block content %}
+<div class="row">
+  <div class="col-4">
+    <div class="display-5 mb-2">Targets found</div>
+  </div>
+  <hr />
+</div>
+<div class="row">
+  <div class="col">
+    <table class="table table-hover table-striped table-secondary text-center">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Email</th>
+          <th>Password</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for target in targets %}
+        <tr>
+          <td>{{target.id}}</td>
+          <td>{{target.email}}</td>
+          <td>{{target.password}}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</div>
+{% endblock %}

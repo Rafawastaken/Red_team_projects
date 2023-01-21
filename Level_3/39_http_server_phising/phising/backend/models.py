@@ -14,4 +14,13 @@ class User(db.Model, UserMixin):
     def __repr__(self):
         return f"<User_{db.alias}"
     
+
+class Target(db.Model):
+    id = db.Column(db.Integer, primary_key = True)
+    email = db.Column(db.String, nullable = False, unique = False)
+    password = db.Column(db.String(100), unique = False, nullable = False)
+
+    def __repr__(self):
+        return f"<Target_{db.email}>"
+
 db.create_all()
